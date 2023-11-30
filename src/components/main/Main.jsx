@@ -4,7 +4,7 @@ const Main = () => {
     return (
         <div className={styles.container}>
             <video autoPlay muted loop className={styles.clip}>
-                <source src='/footage.mp4' type='video/mp4'/>
+                <source src='/footage.mp4'/>
             </video>
             <div className={styles.content}>
                 <h1 className={styles.title}>«<span className={styles.subtitle}>Премиал Маркет</span>» — ваш партнер в неспециализированной оптовой торговле!</h1>

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,300&display=swap');
 
 :root {
-  --main: #00c206;
-  --sub: #feda3a;
-  --grey: #f6f6f6;
+  --main: #009305;
+  --grey: rgb(22, 22, 22);
   --white: rgb(247, 247, 247);
 
   --menu-btn: var(--main);
@@ -20,4 +19,10 @@
 
 html {
   font-family: var(--main-font);
+}
+
+@media (height <= 600px) {
+  :root {
+    --menu-back: var(--main);
+  }
 }
