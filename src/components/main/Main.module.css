@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    max-width: 50%;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.content p {
+    max-width: 60%;
+}
+
+.clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

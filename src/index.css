@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,300&display=swap');
+
+:root {
+  --main: #00c206;
+  --sub: #feda3a;
+  --grey: #f6f6f6;
+  --white: rgb(247, 247, 247);
+
+  --menu-btn: var(--main);
+  --menu-back: transparent;
+  --menu-color: var(--white);
+  
+  --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: var(--main-font);
+}
