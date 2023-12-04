@@ -20,19 +20,19 @@ const Header = () => {
 
     const containerStyle = {
         transition: 'all 1s ease-in-out',
-        backgroundColor: scrolled ? 'var(--main)' : 'transparent',
+        backgroundColor: scrolled ? 'rgb(23, 23, 23)' : 'transparent',
         opacity: scrolled ? '0.98' : '1',
     };
 
     return (
         <>
             <div className={styles.container} style={containerStyle}>
-                <h2 className={styles.title}>Премиал Маркет</h2>
+                <h2 className={styles.title}>Премиал Маркет<sup className={styles.subtitle}>©</sup></h2>
                 <div className={styles.menu}>
-                    <a className={scrolled ? styles.menu_btn_scrolled : styles.menu_btn}>Главная</a>
-                    <a className={scrolled ? styles.menu_btn_scrolled : styles.menu_btn}>О нас</a>
-                    <a className={scrolled ? styles.menu_btn_scrolled : styles.menu_btn}>Услуги</a>
-                    <a className={scrolled ? styles.menu_btn_scrolled : styles.menu_btn}>Контакты</a>
+                    <a className={styles.menu_btn}>Главная</a>
+                    <a className={styles.menu_btn}>О нас</a>
+                    <a className={styles.menu_btn}>Услуги</a>
+                    <a className={styles.menu_btn}>Контакты</a>
                 </div>
             </div>
         </>

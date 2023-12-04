@@ -28,6 +28,12 @@
     pointer-events: none;
     user-select: none;
 }
+.subtitle {
+    color: var(--main);
+    padding: 2px 2px;
+    margin: 2px;
+    font-size: 14pt;
+}
 
 .menu {
     display: flex;

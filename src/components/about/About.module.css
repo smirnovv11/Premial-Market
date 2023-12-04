@@ -1,4 +1,108 @@
 .container {
-    height: 500px;
+    position: relative;
+    z-index: 1;
     background-color: var(--grey);
+}
+.first_block {
+    
+    padding: 6vh 10vh;
+    color: #FFF;
+    position: relative;
+}
+.sec_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    color: #FFF;
+    position: relative;
+    margin-left: 10vh;
+}
+
+.title {
+    font-size: 44pt;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-size: 34pt;
+    margin: 25px 0px;
+    font-weight: bolder;
+}
+
+.articles {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    text-wrap: wrap;
+    font-size: 12pt;
+}
+.articles p::before {
+    content: '■ ';
+    color: var(--sub);
+}
+
+.cube {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    bottom: 3%;
+    right: 3%;
+    width: 300px;
+    z-index: -1;
+    animation: shape1 15s infinite forwards;
+}
+
+@keyframes shape1 {
+    50% {
+        transform: translate(-10%, -32%) rotate(14deg);
+    }
+}
+
+.cards {
+    margin: 20px 0px 50px 0px;
+    display: grid;
+    gap: 4%;
+    justify-content: flex-start;
+    text-align: left;
+    grid-template-columns: 25% 25% 25%;
+    color: black;
+}
+.card {
+    width: 85%;
+    background-color: #232323;
+    padding: 20px 30px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    color: #FFF;
+}
+.card div {
+    display: flex;
+    flex-direction: column;
+}
+.card h3 {
+    font-size: 16pt;
+    color: var(--white);
+}
+.card hr {
+    display: flex;
+    height: 1px;
+    width: 90%;
+    background-color: var(--sub);
+    border: none;
+    border-radius: 50px;
+    margin: 10px 0px;
+}
+.card p {
+    font-size: 12pt;
+}
+
+.image {
+    background-color: var(--sub);
+    padding: 10px;
+    border-radius: 10px;
+    width: 54px;
 }
