@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
+    background: url('/images/back.svg') no-repeat;
 }
 
 .title {
