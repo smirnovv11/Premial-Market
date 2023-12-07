@@ -33,6 +33,7 @@ const Header = () => {
                     <a className={styles.menu_btn}>О нас</a>
                     <a className={styles.menu_btn}>Услуги</a>
                     <a className={styles.menu_btn}>Контакты</a>
+                    <a className={styles.menu_btn}>Заявка</a>
                 </div>
             </div>
         </>
