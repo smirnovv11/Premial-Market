@@ -1,15 +1,25 @@
 import styles from './Footer.module.css'
+import { scroller } from 'react-scroll'
 
 const Footer = () => {
+
+    const scrollTo = (e) => {
+        scroller.scrollTo(e.target.name, {
+            duration: 100,
+            delay: 0,
+            smooth: 'easeInQuad',
+        });
+    }
+
     return (
         <>
             <div className={styles.container}>
                 <div className={styles.menu}>
-                    <a className={styles.menu_btn}>Главная</a>
-                    <a className={styles.menu_btn}>О нас</a>
-                    <a className={styles.menu_btn}>Услуги</a>
-                    <a className={styles.menu_btn}>Контакты</a>
-                    <a className={styles.menu_btn}>Заявка</a>
+                    <a className={styles.menu_btn} name='main' onClick={scrollTo}>Главная</a>
+                    <a className={styles.menu_btn} name='about' onClick={scrollTo}>О нас</a>
+                    <a className={styles.menu_btn} name='services' onClick={scrollTo}>Услуги</a>
+                    <a className={styles.menu_btn} name='contacts' onClick={scrollTo}>Контакты</a>
+                    <a className={styles.menu_btn} name='form' onClick={scrollTo}>Заявка</a>
                 </div>
                 <div className={styles.logo_container}>
                     <h2 className={styles.title}>Премиал Маркет<sup className={styles.subtitle}>©</sup></h2>
