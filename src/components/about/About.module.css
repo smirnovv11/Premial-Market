@@ -32,10 +32,15 @@
     margin: 10px 0px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 70%;
     text-wrap: wrap;
     font-size: 12pt;
+}
+.articles p {
+    padding: 5px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 15px;
 }
 .articles p::before {
     content: '■ ';

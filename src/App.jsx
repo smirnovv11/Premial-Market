@@ -5,6 +5,7 @@ import Main from "./components/main/Main"
 import About from "./components/about/About"
 import Services from "./components/services/Services"
 import Contacts from "./components/contacts/Contacts"
+import Form from "./components/form/Form"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <About/>
         <Services/>
         <Contacts/>
+        <Form/>
       </div>
       <Footer/>
     </div>

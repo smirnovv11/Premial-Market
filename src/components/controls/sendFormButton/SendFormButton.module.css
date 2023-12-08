@@ -1,0 +1,18 @@
+.service_btn {
+    margin-top: 20px;
+    padding: 10px 45px;
+    font-size: 14pt;
+    font-family: var(--main-font);
+    background-color: var(--main);
+    color: var(--grey);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.service_btn:hover {
+    background-color: var(--sub);
+    box-shadow: 0px 0px 20px 0px rgba(3, 165, 0, 0.4);
+}

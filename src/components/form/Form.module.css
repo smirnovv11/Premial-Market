@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.title {
+    font-size: 28pt;
+    position: relative;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--sub);
+}
+
+.line {
+    width: 20%;
+    height: 1px;
+    border: none;
+    background-color: var(--sub);
+}
+
+.field {
+    font-size: 13pt;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form {
+    margin: 40px;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 60px 50px 40px 50px;
+    border-radius: 15px;
+    background-color: #232323;
+}
+
+.service_line {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.service_line select{
+    padding: 5px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13pt;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.client_line {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn_line {
+    align-self: flex-end;
+}
