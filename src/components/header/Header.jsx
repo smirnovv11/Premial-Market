@@ -1,7 +1,16 @@
 import styles from './Header.module.css'
 import React, { useState, useEffect } from 'react';
+import { scroller } from 'react-scroll'
 
 const Header = () => {
+
+    const scrollTo = (e) => {
+        scroller.scrollTo(e.target.name, {
+            duration: 100,
+            delay: 0,
+            smooth: 'easeInQuad',
+        });
+    }
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -29,11 +38,11 @@ const Header = () => {
             <div className={styles.container} style={containerStyle}>
                 <h2 className={styles.title}>Премиал Маркет<sup className={styles.subtitle}>©</sup></h2>
                 <div className={styles.menu}>
-                    <a className={styles.menu_btn}>Главная</a>
-                    <a className={styles.menu_btn}>О нас</a>
-                    <a className={styles.menu_btn}>Услуги</a>
-                    <a className={styles.menu_btn}>Контакты</a>
-                    <a className={styles.menu_btn}>Заявка</a>
+                    <a className={styles.menu_btn} name='main' onClick={scrollTo}>Главная</a>
+                    <a className={styles.menu_btn} name='about' onClick={scrollTo}>О нас</a>
+                    <a className={styles.menu_btn} name='services' onClick={scrollTo}>Услуги</a>
+                    <a className={styles.menu_btn} name='contacts' onClick={scrollTo}>Контакты</a>
+                    <a className={styles.menu_btn} name='form' onClick={scrollTo}>Заявка</a>
                 </div>
             </div>
         </>

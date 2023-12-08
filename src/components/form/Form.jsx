@@ -24,7 +24,7 @@ const Form = () => {
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='form'>
             <h2 className={styles.title}>Оформление заявки</h2>
             <div className={styles.form}>
                 <div className={styles.service_line}>

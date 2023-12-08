@@ -3,7 +3,7 @@ import styles from './Main.module.css'
 
 const Main = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='main'>
             <video autoPlay muted loop className={styles.clip}>
                 <source src='/footage.mp4'/>
             </video>

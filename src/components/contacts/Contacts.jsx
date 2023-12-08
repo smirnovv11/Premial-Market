@@ -2,7 +2,7 @@ import styles from './Contacts.module.css'
 
 const Contacts = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='contacts'>
             <h1 className={styles.title}>Контактная информация</h1>
             <div className={styles.contacts}>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.5808098378413!2d27.5564223833179!3d53.9061321045756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf94d3578153%3A0xfd5862e8c09b18a3!2z0YPQuy4g0JfRi9Cx0LjRhtC60LDRjyA2LCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sby!4v1701867721796!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
