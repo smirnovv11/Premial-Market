@@ -36,7 +36,9 @@ const Header = () => {
     return (
         <>
             <div className={styles.container} style={containerStyle}>
-                <h2 className={styles.title}>Премиал Маркет<sup className={styles.subtitle}>©</sup></h2>
+                <div className={styles.logo}>
+                    <h2 className={styles.title}>Премиал Маркет<sup className={styles.subtitle}>©</sup></h2>
+                </div>
                 <div className={styles.menu}>
                     <a className={styles.menu_btn} name='main' onClick={scrollTo}>Главная</a>
                     <a className={styles.menu_btn} name='about' onClick={scrollTo}>О нас</a>

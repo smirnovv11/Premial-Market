@@ -18,8 +18,11 @@
     gap: 20px;
 }
 .content p {
-    max-width: 60%;
+    max-width: 800px;
     text-align: center;
+}
+.title {
+    width: 700px;
 }
 
 .clip {
@@ -39,5 +42,33 @@
     .clip {
         width: auto;
         height: 100%;
+    }
+}
+
+@media (width <= 900px) {
+    .title {
+        font-size: 18pt;
+    }
+    .content p {
+        font-size: 11pt;
+    }
+}
+@media (width <= 750px) {
+    .title {
+        font-size: 18pt;
+        width: 400px;
+    }
+    .content p {
+        width: 160%;
+    }
+}
+@media (width <= 450px) {
+    .title {
+        font-size: 16pt;
+        width: 180%;
+    }
+    .content p {
+        font-size: 9pt;
+        width: 140%;
     }
 }

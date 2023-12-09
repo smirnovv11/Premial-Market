@@ -30,7 +30,6 @@ const Footer = () => {
                 <div className={styles.contacts}>
                     <p>MTC: <a href='tel: +3752988883344'>+3752988883344</a></p>
                     <p>A1: <a href='tel: +3752923883143'>+3752923883143</a></p>
-                    <p><a href='mailto: premialmarket.info@gmail.com'>premialmarket.info@gmail.com</a></p>
                 </div>
                 <p>ООО "Премиал Маркет" © 2023 </p>
             </div>

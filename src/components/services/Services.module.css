@@ -54,7 +54,84 @@
 
 .card ul {
     margin: 12px;
+    padding-left: 16px;
 }
 .card ul li span {
     font-weight: bold;
+}
+
+@media (width <= 1400px) {
+    .cards {
+        width: 100%;
+        gap: 40px;
+    }
+}
+
+@media (width <= 1150px) {
+    .cards {
+        width: 100%;
+        gap: 40px;
+    }
+    .card { 
+        font-size: 10pt;
+    }
+    .card h3 {
+        font-size: 15pt;
+    }
+    .card p {
+        font-size: 10pt;
+    }
+}
+@media (width <= 1000px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        width: 95%;
+    }
+    .card { 
+        font-size: 12pt;
+    }
+    .card h3 {
+        font-size: 20pt;
+    }
+    .card p {
+        font-size: 12pt;
+    }
+}
+@media (width <= 800px) {
+    .card ul{ 
+        font-size: 8pt;
+    }
+    .card h3 {
+        font-size: 20pt;
+    }
+    .card p {
+        font-size: 8pt;
+    }
+}
+@media (width <= 700px) {
+    .card ul{ 
+        font-size: 12pt;
+    }
+    .card h3 {
+        font-size: 20pt;
+    }
+    .card p {
+        font-size: 12pt;
+    }
+    .card ul {
+        padding-left: 5px;
+    }
+}
+@media (width <= 470px) {
+    .card {
+        padding: 20px 18px;
+    }
+    .container {
+        padding: 4%;
+    }
+    .title {
+        font-size: 22pt;
+    }
 }

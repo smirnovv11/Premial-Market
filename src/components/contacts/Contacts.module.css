@@ -12,7 +12,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 40px;
-    width: 100%;
+    width: 90%;
 }
 
 .contacts iframe {
@@ -47,4 +47,28 @@
 .info div p a {
     color: var(--white);
     text-decoration: none;
+}
+
+@media (width <= 800px) {
+    .contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .title {
+        font-size: 16pt;
+    }
+    .info div h2{
+        font-size: 14pt;
+    }
+    .info div p {
+        font-size: 12pt;
+    }
+    .container {
+        padding: 6%;
+    }
+    .container iframe {
+        align-self: center;
+        width: 100%;
+    }
 }

@@ -8,7 +8,7 @@
     padding: 40px;
 }
 .container hr {
-    width: 40%;
+    width: 700px;
     height: 1px;
     background-color: rgb(173, 173, 173);
     border: none;
@@ -54,4 +54,54 @@
 }
 .contacts p a:hover {
     text-decoration: underline;
+}
+
+@media (width <= 1000px) {
+    .title {
+        font-size: 16pt;
+    }
+    .logo_container {
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_container hr {
+        display: none;
+    }
+    .logo_container p {
+        width: 50%;
+    }
+    .container hr {
+        width: 600px;
+    }
+}
+
+@media (width <= 750px) {
+    .title {
+        font-size: 15pt;
+    }
+    .logo_container hr {
+        display: none;
+    }
+    .logo_container {
+        gap: 12px;
+        flex-direction: column;
+    }
+    .logo_container p {
+        width: 80%;
+        text-align: center;
+    }
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container hr {
+        width: 90%;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu {
+        font-size: 12pt;
+    }
 }

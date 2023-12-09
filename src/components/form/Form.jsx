@@ -38,7 +38,7 @@ const Form = () => {
                 <div className={styles.client_line}>
                     <label htmlFor='name'>Ваше имя:</label>
                     <input className={styles.field} name='name' type='text' value={form.name} onChange={handleInputChange} maxLength={20}></input>
-                    <label htmlFor='phone'>Телефон:</label>
+                    <label htmlFor='phone'>&nbsp;Телефон:</label>
                     <input className={styles.field} name='phone' type='text'></input>
                 </div>
                 <div className={styles.btn_line}>

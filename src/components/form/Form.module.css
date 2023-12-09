@@ -68,5 +68,47 @@
 }
 
 .btn_line {
+    margin-top: 20px;
     align-self: flex-end;
+}
+
+@media (width <= 1000px) {
+    .service_line {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .client_line {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .client_line input {
+        width: 100%;
+    }
+}
+
+@media (width <= 600px) {
+    .form {
+        font-size: 12pt;
+    }
+    .service_line select {
+        font-size: 12pt;
+    }
+    .field {
+        font-size: 12pt;
+    }
+    .title {
+        font-size: 22pt;
+    }
+}
+
+@media (width <= 500px) {
+    .container {
+        padding: 30px;
+    }
+    .form {
+        margin: 50px 10px 10px 10px;
+        padding-top: 40px;
+    }
 }
