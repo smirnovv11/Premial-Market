@@ -4,7 +4,7 @@ const SendFormButton = () => {
 
     return (
         <>
-            <a className={styles.service_btn}>Отправить</a>
+            <input type='submit' className={styles.service_btn}/>
         </>
     )
 }

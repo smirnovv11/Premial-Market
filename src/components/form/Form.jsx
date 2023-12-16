@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import styles from './Form.module.css'
 import SendFormButton from '../controls/sendFormButton/SendFormButton'
+import axios from "axios";
 
 const Form = () => {
 
     const clearForm = () => {
         return {
-            service: '',
+            service: 'Экспресс-доставка и логистика',
             name: '',
             phone: '',
         }
@@ -22,11 +23,29 @@ const Form = () => {
         })
     }
 
+    const sendDataToServer = async (e) => {
+        e.preventDefault()
+        
+        let fdata = new FormData();
+        fdata.append('name', form.name)
+        fdata.append('service', form.service)
+        fdata.append('phone', form.phone)
+
+        axios
+        .post("http://test1.loc/text.php", fdata)
+        .then((response) => {
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    };
+
 
     return (
         <div className={styles.container} id='form'>
             <h2 className={styles.title}>Оформление заявки</h2>
-            <div className={styles.form}>
+            <form className={styles.form} onSubmit={sendDataToServer}>
                 <div className={styles.service_line}>
                     <label htmlFor='service'>Услуга: </label>
                     <select type='select' name='service' required value={form.service} onChange={handleInputChange}>
@@ -37,14 +56,14 @@ const Form = () => {
                 </div>
                 <div className={styles.client_line}>
                     <label htmlFor='name'>Ваше имя:</label>
-                    <input className={styles.field} name='name' type='text' value={form.name} onChange={handleInputChange} maxLength={20}></input>
+                    <input className={styles.field} name='name' type='text' value={form.name} onChange={handleInputChange} maxLength={20} required></input>
                     <label htmlFor='phone'>&nbsp;Телефон:</label>
-                    <input className={styles.field} name='phone' type='text'></input>
+                    <input className={styles.field} name='phone' type='text' value={form.phone} onChange={handleInputChange} required></input>
                 </div>
                 <div className={styles.btn_line}>
                     <SendFormButton/>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }
