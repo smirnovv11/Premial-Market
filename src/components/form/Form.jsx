@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './Form.module.css'
 import SendFormButton from '../controls/sendFormButton/SendFormButton'
 import axios from "axios";
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
 
@@ -25,19 +26,12 @@ const Form = () => {
 
     const sendDataToServer = async (e) => {
         e.preventDefault()
-        
-        let fdata = new FormData();
-        fdata.append('name', form.name)
-        fdata.append('service', form.service)
-        fdata.append('phone', form.phone)
 
-        axios
-        .post("http://test1.loc/text.php", fdata)
-        .then((response) => {
-            console.log(response.data);
-        })
-        .catch((error) => {
-            console.log(error);
+        emailjs.sendForm('service_k58u8e8', 'template_c1sgyse', form.current, 'ywk6rl1MR_6xlqcJZ')
+        .then((result) => {
+            alert('Заявка успешно отправлена!')
+        }, (error) => {
+            console.log(error.text);
         });
     };
 
@@ -45,7 +39,7 @@ const Form = () => {
     return (
         <div className={styles.container} id='form'>
             <h2 className={styles.title}>Оформление заявки</h2>
-            <form className={styles.form} onSubmit={sendDataToServer}>
+            <form className={styles.form} ref={form} onSubmit={sendDataToServer}>
                 <div className={styles.service_line}>
                     <label htmlFor='service'>Услуга: </label>
                     <select type='select' name='service' required value={form.service} onChange={handleInputChange}>
